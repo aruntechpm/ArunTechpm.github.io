@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- META -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Arunkumar Subramanian | Technical Program Manager – Data, AI & Azure</title>
+  <meta name="description"
+        content=" Technical Program Manager with 14+ years delivering enterprise Data, AI, and Azure Cloud programs. Proven in governance, execution predictability, and AI-assisted delivery." />
+  <meta name="author" content="Arunkumar Subramanian" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Arunkumar Subramanian | Senior Technical Program Manager – Data, AI & Azure" />
+  <meta property="og:description" content="Enterprise-scale Program Leadership across Data, AI, and Azure Cloud." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="Arun Latest Linkedin Photo.png" />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== THEME ===== */
+:root {
+  --primary: #0078D4;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --card: #f5f7fa;
+  --border: #e6e9ef;
+  --muted: #666;
+}
+
+[data-theme="dark"] {
+  --bg: #0b0f14;
+  --text: #e6e6e6;
+  --card: #131a22;
+  --border: rgba(255,255,255,0.08);
+  --muted: #9aa4b2;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* ===== NAV ===== */
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-right: 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* ===== GENERAL ===== */
+section { margin-bottom: 4.5rem; }
+
+h1 { font-size: 2.6rem; margin-bottom: 1rem; }
+h1 span { color: var(--primary); }
+h2 { font-size: 1.9rem; margin-bottom: 1.4rem; }
+h3 { font-size: 1.3rem; margin-bottom: 0.6rem; }
+
+p { max-width: 900px; margin-bottom: 1rem; }
+
+ul { list-style: none; }
+ul li {
+  margin-bottom: 0.6rem;
+  padding-left: 1rem;
+  position: relative;
+}
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+/* ===== HERO ===== */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.6fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-photo img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-photo { text-align: center; }
+}
+
+/* ===== CARDS ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+/* ===== CAREER TIMELINE ===== */
+.career-gantt { overflow-x: auto; padding-bottom: 1.2rem; }
+
+.gantt-years {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.gantt-years div { text-align: center; }
+
+.gantt-track { position: relative; height: 160px; }
+
+.gantt-bar {
+  position: absolute;
+  height: 46px;
+  background: linear-gradient(90deg, #0078D4, #4fa3e3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gantt-bar img {
+  height: 22px;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.bar-tcs { top: 0; }
+.bar-cg { top: 60px; }
+.bar-lti { top: 120px; }
+
+/* ===== AI CASES ===== */
+.ai-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.ai-card {
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.ai-thumb {
+  height: 130px;
+  background: linear-gradient(135deg, #0078D4, #4fa3e3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.ai-content { padding: 1.5rem; }
+
+/* ===== CONTACT ===== */
+.contact-wrapper {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  max-width: 900px;
+}
+
+.contact-actions {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 0.8rem 1.3rem;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-btn.secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <strong>Arun TPM Portfolio</strong>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#timeline">Career</a>
+      <a href="#ai">AI Work</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div>
+      <h1> Technical Program Manager<br><span> Azure Data & AI Enablement </span></h1>
+      <ul>
+        <li>Stabilizing high-risk, multi-squad enterprise Data & AI programs</li>
+        <li>14+ years converting cloud strategy into predictable execution</li>
+      </ul>
+    </div>
+    <div class="hero-photo">
+      <img src="Arun Latest Linkedin Photo.png" alt="Arunkumar Subramanian">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Technical Program Manager with 14+ years of experience delivering
+    enterprise-scale Data, Analytics, and Cloud transformation programs.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Core Competencies</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Program Leadership</h3>
+      <ul>
+        <li>Enterprise governance</li>
+        <li>Multi-vendor delivery</li>
+        <li>Risk & dependency control</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Azure Data & AI</h3>
+      <ul>
+        <li>Synapse, Databricks, ADF</li>
+        <li>Analytics platforms</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Execution & ROI</h3>
+      <ul>
+        <li>Agile / hybrid delivery</li>
+        <li>Cloud cost optimization</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section id="timeline">
+  <h2>Career Timeline</h2>
+
+  <div class="career-gantt">
+    <div class="gantt-years">
+      <div>2011</div><div>2012</div><div>2013</div><div>2014</div><div>2015</div>
+      <div>2016</div><div>2017</div><div>2018</div><div>2019</div><div>2020</div>
+      <div>2021</div><div>2022</div><div>2023</div><div>2024</div><div>2025</div>
+    </div>
+
+    <div class="gantt-track">
+      <div class="gantt-bar bar-tcs" style="left:3.5%; width:69.5%;">
+        <img src="TCS - Logo.png" alt="TCS">
+      </div>
+      <div class="gantt-bar bar-cg" style="left:73%; width:13%;">
+        <img src="CG Logo.png" alt="Capgemini">
+      </div>
+      <div class="gantt-bar bar-lti" style="left:86%; width:14%;">
+        <img src="LTI Logo.png" alt="LTIMindtree">
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top:1.2rem; font-weight:500;">
+    Worked with Fortune 1000 clients including <strong>USAA</strong>,
+    <strong>Westpac</strong>, <strong>Coca-Cola</strong>, and <strong>Onsemi</strong>.
+  </p>
+</section>
+
+<!-- AI -->
+<section id="ai">
+  <h2>AI Case Studies</h2>
+  <div class="ai-cards">
+    <div class="ai-card">
+      <div class="ai-thumb">Program Governance AI</div>
+      <div class="ai-content">
+        <p>AI-assisted executive reporting, risk synthesis, and decision support.</p>
+        <a href="https://clean-carol-322.notion.site/AI-Portfolio-2c02e337e927804f8eaaff59d45d6a6b" target="_blank">
+          View Case Study →
+        </a>
+      </div>
+    </div>
+
+    <div class="ai-card">
+      <div class="ai-thumb">AI DataOps</div>
+      <div class="ai-content">
+        <p>AI-driven operational insights improving DataOps efficiency.</p>
+        <a href="https://clean-carol-322.notion.site/AI-Portfolio-2c02e337e927804f8eaaff59d45d6a6b" target="_blank">
+          View Case Study →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-wrapper">
+    <p>
+      Open to program leadership conversations involving
+      Data, AI, and Cloud transformation.
+    </p>
+    <div class="contact-actions">
+      <a class="contact-btn" href="mailto:arun.techpm@gmail.com">Email</a>
+      <a class="contact-btn secondary"
+         href="https://calendar.app.google/q3UmpJkZzke6f64F6"
+         target="_blank">
+         Schedule Call
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Chennai, India | Technical Program Manager – Data, AI & Cloud</p>
+  <p>
+    <a href="https://www.linkedin.com/in/aruntechpm" target="_blank">LinkedIn</a> |
+    <a href="mailto:arun.techpm@gmail.com">Email</a>
+  </p>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  const toggle = document.getElementById("theme-toggle");
+  const stored = localStorage.getItem("theme");
+
+  if (stored) {
+    document.documentElement.setAttribute("data-theme", stored);
+  }
+
+  toggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+    toggle.textContent = next === "dark" ? "☀️" : "🌙";
+  });
+})();
+</script>
+
+</body>
+</html>
