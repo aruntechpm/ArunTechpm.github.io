@@ -269,7 +269,7 @@ footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
       <a href="#timeline">Career</a>
       <a href="#ai">AI Work</a>
       <a href="#contact">Contact</a>
-      <button id="theme-toggle">🌙</button>
+      <button id="theme-toggle"> White </button>
     </div>
   </div>
 </nav>
@@ -297,7 +297,7 @@ footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
   <h2>About Me</h2>
   <p>
     Technical Program Manager with 14+ years of experience delivering
-    enterprise-scale Data, Analytics, and Cloud transformation programs.
+    enterprise-scale Data, Analytics, and Azure Cloud transformation programs.
   </p>
 </section>
 
@@ -355,13 +355,13 @@ footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
   </div>
 
   <p style="margin-top:1.2rem; font-weight:500;">
-    Worked with Fortune 1000 clients including <strong>USAA</strong>,
-    <strong>Westpac</strong>, <strong>Coca-Cola</strong>, and <strong>Onsemi</strong>.
+      Worked with Fortune 1000 clients including <strong>USAA</strong>,
+      <strong>Westpac</strong>, <strong>Coca-Cola</strong>, and <strong>Onsemi</strong>.
   </p>
 </section>
 
 <!-- AI -->
-<section id="ai">
+<section id="Ai">
   <h2>AI Case Studies</h2>
   <div class="ai-cards">
     <div class="ai-card">
@@ -429,10 +429,11 @@ footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
     const next = current === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", next);
     localStorage.setItem("theme", next);
-    toggle.textContent = next === "dark" ? "☀️" : "🌙";
+    toggle.textContent = next === "dark" ? "Dark" : "White";
   });
 })();
 </script>
 
 </body>
 </html>
+
