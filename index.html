@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <!-- META -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -11,19 +10,18 @@
         content=" Technical Program Manager with 14+ years delivering enterprise Data, AI, and Azure Cloud programs. Proven in governance, execution predictability, and AI-assisted delivery." />
   <meta name="author" content="Arunkumar Subramanian" />
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="Arunkumar Subramanian | Senior Technical Program Manager – Data, AI & Azure" />
-  <meta property="og:description" content="Enterprise-scale Program Leadership across Data, AI, and Azure Cloud." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arunkumar Subramanian | Technical Program Manager" />
+  <meta property="og:description" content="Enterprise Data, AI & Azure Program Leadership" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="Arun Latest Linkedin Photo.png" />
 
-  <!-- FONT -->
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* ===== THEME ===== */
+/* ================= THEME ================= */
 :root {
   --primary: #0078D4;
   --bg: #ffffff;
@@ -56,7 +54,7 @@ body {
   padding: 2.5rem 1.5rem;
 }
 
-/* ===== NAV ===== */
+/* ================= NAV ================= */
 nav {
   position: sticky;
   top: 0;
@@ -82,20 +80,18 @@ nav {
   font-weight: 500;
 }
 
-.nav-links a:hover {
-  color: var(--primary);
-}
+.nav-links a:hover { color: var(--primary); }
 
 #theme-toggle {
   background: none;
   border: 1px solid var(--border);
-  padding: 0.4rem 0.7rem;
+  padding: 0.35rem 0.6rem;
   border-radius: 8px;
   cursor: pointer;
   color: var(--text);
 }
 
-/* ===== GENERAL ===== */
+/* ================= GENERAL ================= */
 section { margin-bottom: 4.5rem; }
 
 h1 { font-size: 2.6rem; margin-bottom: 1rem; }
@@ -118,7 +114,7 @@ ul li::before {
   color: var(--primary);
 }
 
-/* ===== HERO ===== */
+/* ================= HERO ================= */
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.6fr;
@@ -138,7 +134,7 @@ ul li::before {
   .hero-photo { text-align: center; }
 }
 
-/* ===== CARDS ===== */
+/* ================= CARDS ================= */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -152,7 +148,7 @@ ul li::before {
   border: 1px solid var(--border);
 }
 
-/* ===== CAREER TIMELINE ===== */
+/* ================= CAREER TIMELINE ================= */
 .career-gantt { overflow-x: auto; padding-bottom: 1.2rem; }
 
 .gantt-years {
@@ -188,7 +184,7 @@ ul li::before {
 .bar-cg { top: 60px; }
 .bar-lti { top: 120px; }
 
-/* ===== AI CASES ===== */
+/* ================= AI CASE STUDIES ================= */
 .ai-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -210,13 +206,23 @@ ul li::before {
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-transform: none; /* FIXED: Proper Case */
 }
 
 .ai-content { padding: 1.5rem; }
 
-/* ===== CONTACT ===== */
+.ai-content a {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ================= CONTACT ================= */
 .contact-wrapper {
   background: var(--card);
   border-radius: 18px;
@@ -247,19 +253,20 @@ ul li::before {
   border: 1px solid var(--primary);
 }
 
+/* ================= FOOTER ================= */
 footer {
   border-top: 1px solid var(--border);
   padding-top: 2rem;
   text-align: center;
   font-size: 0.9rem;
 }
+
 footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <strong>Arun TPM Portfolio</strong>
@@ -269,21 +276,20 @@ footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
       <a href="#timeline">Career</a>
       <a href="#ai">AI Work</a>
       <a href="#contact">Contact</a>
-      <button id="theme-toggle"> White </button>
+      <button id="theme-toggle">🌙</button>
     </div>
   </div>
 </nav>
 
 <div class="container">
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-grid">
     <div>
-      <h1> Technical Program Manager<br><span> Azure Data & AI Enablement </span></h1>
+      <h1>Technical Program Manager<br><span>Data, AI & Azure Cloud</span></h1>
       <ul>
-        <li>Stabilizing high-risk, multi-squad enterprise Data & AI programs</li>
-        <li>14+ years converting cloud strategy into predictable execution</li>
+        <li>Stabilizing high-risk, multi-squad enterprise programs</li>
+        <li>14+ years driving predictable execution</li>
       </ul>
     </div>
     <div class="hero-photo">
@@ -292,125 +298,70 @@ footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
-  <p>
-    Technical Program Manager with 14+ years of experience delivering
-    enterprise-scale Data, Analytics, and Azure Cloud transformation programs.
-  </p>
+  <p> Technical Program Manager delivering enterprise Data, AI, and Azure Cloud programs with execution rigor.</p>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <h2>Core Competencies</h2>
   <div class="cards">
-    <div class="card">
-      <h3>Program Leadership</h3>
-      <ul>
-        <li>Enterprise governance</li>
-        <li>Multi-vendor delivery</li>
-        <li>Risk & dependency control</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Azure Data & AI</h3>
-      <ul>
-        <li>Synapse, Databricks, ADF</li>
-        <li>Analytics platforms</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Execution & ROI</h3>
-      <ul>
-        <li>Agile / hybrid delivery</li>
-        <li>Cloud cost optimization</li>
-      </ul>
-    </div>
+    <div class="card"><h3>   Program Leadership </h3><ul><li>   Governance</li><li>   Risk & Dependencies</li></ul></div>
+    <div class="card"><h3>Azure Data & AI</h3><ul><li>Synapse</li><li>ADLS</li></ul></div>
+    <div class="card"><h3>Execution & ROI</h3><ul><li>Agile delivery</li><li>Cost optimization</li></ul></div>
   </div>
 </section>
 
-<!-- CAREER -->
 <section id="timeline">
   <h2>Career Timeline</h2>
-
   <div class="career-gantt">
     <div class="gantt-years">
       <div>2011</div><div>2012</div><div>2013</div><div>2014</div><div>2015</div>
       <div>2016</div><div>2017</div><div>2018</div><div>2019</div><div>2020</div>
       <div>2021</div><div>2022</div><div>2023</div><div>2024</div><div>2025</div>
     </div>
-
     <div class="gantt-track">
-      <div class="gantt-bar bar-tcs" style="left:3.5%; width:69.5%;">
-        <img src="TCS - Logo.png" alt="TCS">
-      </div>
-      <div class="gantt-bar bar-cg" style="left:73%; width:13%;">
-        <img src="CG Logo.png" alt="Capgemini">
-      </div>
-      <div class="gantt-bar bar-lti" style="left:86%; width:14%;">
-        <img src="LTI Logo.png" alt="LTIMindtree">
-      </div>
+      <div class="gantt-bar bar-tcs" style="left:3.5%; width:69.5%;"><img src="TCS - Logo.png"></div>
+      <div class="gantt-bar bar-cg" style="left:73%; width:13%;"><img src="CG Logo.png"></div>
+      <div class="gantt-bar bar-lti" style="left:86%; width:14%;"><img src="LTI Logo.png"></div>
     </div>
   </div>
-
-  <p style="margin-top:1.2rem; font-weight:500;">
-      Worked with Fortune 1000 clients including <strong>USAA</strong>,
-      <strong>Westpac</strong>, <strong>Coca-Cola</strong>, and <strong>Onsemi</strong>.
-  </p>
+  <p><strong>Fortune 1000 clients:</strong> USAA, Westpac, Coca-Cola, onsemi</p>
 </section>
 
-<!-- AI -->
-<section id="Ai">
+<section id="ai">
   <h2>AI Case Studies</h2>
   <div class="ai-cards">
     <div class="ai-card">
       <div class="ai-thumb">Program Governance AI</div>
       <div class="ai-content">
-        <p>AI-assisted executive reporting, risk synthesis, and decision support.</p>
-        <a href="https://clean-carol-322.notion.site/AI-Portfolio-2c02e337e927804f8eaaff59d45d6a6b" target="_blank">
-          View Case Study →
-        </a>
+        <p>AI-assisted executive reporting and risk synthesis.</p>
+        <a href="https://clean-carol-322.notion.site/AI-Portfolio-2c02e337e927804f8eaaff59d45d6a6b" target="_blank">View →</a>
       </div>
     </div>
-
     <div class="ai-card">
       <div class="ai-thumb">AI DataOps</div>
       <div class="ai-content">
-        <p>AI-driven operational insights improving DataOps efficiency.</p>
-        <a href="https://clean-carol-322.notion.site/AI-Portfolio-2c02e337e927804f8eaaff59d45d6a6b" target="_blank">
-          View Case Study →
-        </a>
+        <p>AI-driven operational insights improving delivery.</p>
+        <a href="https://clean-carol-322.notion.site/AI-Portfolio-2c02e337e927804f8eaaff59d45d6a6b" target="_blank">View →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <div class="contact-wrapper">
-    <p>
-      Open to program leadership conversations involving
-      Data, AI, and Cloud transformation.
-    </p>
+    <p>Open to program leadership conversations.</p>
     <div class="contact-actions">
       <a class="contact-btn" href="mailto:arun.techpm@gmail.com">Email</a>
-      <a class="contact-btn secondary"
-         href="https://calendar.app.google/q3UmpJkZzke6f64F6"
-         target="_blank">
-         Schedule Call
-      </a>
+      <a class="contact-btn secondary" href="https://calendar.app.google/q3UmpJkZzke6f64F6" target="_blank">Schedule Call</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Chennai, India | Technical Program Manager – Data, AI & Cloud</p>
-  <p>
-    <a href="https://www.linkedin.com/in/aruntechpm" target="_blank">LinkedIn</a> |
-    <a href="mailto:arun.techpm@gmail.com">Email</a>
-  </p>
+  <p>Chennai, India | Technical Program Manager</p>
 </footer>
 
 </div>
@@ -419,21 +370,17 @@ footer a { color: var(--primary); text-decoration: none; margin: 0 0.5rem; }
 (function () {
   const toggle = document.getElementById("theme-toggle");
   const stored = localStorage.getItem("theme");
-
-  if (stored) {
-    document.documentElement.setAttribute("data-theme", stored);
-  }
+  if (stored) document.documentElement.setAttribute("data-theme", stored);
 
   toggle.addEventListener("click", () => {
     const current = document.documentElement.getAttribute("data-theme");
     const next = current === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", next);
     localStorage.setItem("theme", next);
-    toggle.textContent = next === "dark" ? "Dark" : "White";
+    toggle.textContent = next === "dark" ? "☀️" : "🌙";
   });
 })();
 </script>
 
 </body>
 </html>
-
